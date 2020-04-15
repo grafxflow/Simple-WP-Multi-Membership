@@ -191,10 +191,8 @@ function add_member($member) {
 	$fields['password'] = $user_info->user_pass;
 	$fields['member_since'] = date('Y-m-d H:i:s');
 	// $fields['membership_level'] = $member->membership_level;
-	// 3 = ''
+	// You need to create a defalt membership level on the backend then update this id number as the default for each memeber.
 	$fields['membership_level'] = 3;
-	// $fields['account_state'] = '$member->account_state';
-	// $fields['account_state'] = 'activation_required';
 	$fields['account_state'] = 'active';
 	$fields['email'] = $user_info->user_email;
 	$fields['address_street'] = '';
